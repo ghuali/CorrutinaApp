@@ -1,4 +1,5 @@
 package com.angel.corrutina
+
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -51,4 +52,3 @@ fun adivinacionNumero(): Deferred<String> = CoroutineScope(Job()).async {
     val randomNumber = Random.nextInt(1, 11)
     "¿Es el número $randomNumber?"
 }
-
